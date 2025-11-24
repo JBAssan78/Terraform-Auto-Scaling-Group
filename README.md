@@ -11,4 +11,6 @@ Before deploying the Auto Scaling Group with Terraform, complete the following s
 Make sure your AWS access key and secret key are configured on your machine so Terraform can authenticate with your AWS account. You can do this using:
 
 ```bash
-aws configure 
+aws configure
+
+
