@@ -6,11 +6,22 @@ An Auto Scaling Group (ASG) in AWS is a service that automatically adjusts the n
 
 Before deploying the Auto Scaling Group with Terraform, complete the following steps to prepare your environment:
 
-### Set Up Your AWS Credentials ###
+### 1. Set Up Your AWS Credentials ###
 
 Make sure your AWS access key and secret key are configured on your machine so Terraform can authenticate with your AWS account. You can do this using:
 
 ```bash
 aws configure
+```
+Enter your access key, secret key, default region, and output format when prompted.
+
+### 2. Clone This Repository ###
+
+Download the project to your local environment:
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
 
 
