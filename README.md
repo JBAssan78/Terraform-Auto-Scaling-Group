@@ -44,5 +44,18 @@ In the project directory, initialize Terraform to download all required provider
 ```bash
 terraform init
 ```
+### 5 Preview the Infrastructure ###
+Before applying anything, review the plan to see what resources will be created:
+```bash
+terraform plan
+```
+
+### 6. Deploy the ASG Environment ###
+When you're ready, apply the configuration and let Terraform automatically build the full environment in AWS:
+```bash
+terraform apply
+```
+Approve when prompted, and Terraform will create the Auto Scaling Group and all supporting infrastructure.
+![image]()
 
 
