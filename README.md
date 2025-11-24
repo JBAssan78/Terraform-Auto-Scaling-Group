@@ -23,5 +23,26 @@ Download the project to your local environment:
 git clone <your-repo-url>
 cd <your-repo-folder>
 ```
+### 3. Review the Terraform Files ###
+Inside the repo, you’ll find the core Terraform configurations that define your entire Auto Scaling setup, including:
+
+1. VPC and subnets
+
+2. Security groups
+
+3. Launch template
+
+4. Auto Scaling Group configuration
+
+5. Scaling policies (if included)
+   
+This gives you a clear view of everything Terraform is about to build.
+
+### 4. Initialize Terraform ###
+
+In the project directory, initialize Terraform to download all required providers and prepare the environment:
+```bash
+terraform init
+```
 
 
