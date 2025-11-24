@@ -56,6 +56,6 @@ When you're ready, apply the configuration and let Terraform automatically build
 terraform apply
 ```
 Approve when prompted, and Terraform will create the Auto Scaling Group and all supporting infrastructure.
-![image]()
+![image](https://github.com/JBAssan78/Terraform-Auto-Scaling-Group/blob/31619e14053f5f3b59e7c715c5460d1513ba0822/Screenshot%202025-11-23%20130811.png)
 
 
