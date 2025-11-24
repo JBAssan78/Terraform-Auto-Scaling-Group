@@ -1,0 +1,18 @@
+Set up for Auto Scaling Group
+
+Inside Terraform registry you can find the latest launch resource under Auto Scaling Group for your choice of code commands to run.
+
+example used
+
+resource "aws_autoscaling_group" "bar" {
+  availability_zones = ["us-east-1a"]
+  desired_capacity   = 1
+  max_size           = 1
+  min_size           = 1
+
+  launch_template {
+    id      = aws_launch_template.foobar.id
+    version = "$Latest"
+  }
+}
+---------------------------------------
