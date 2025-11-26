@@ -1,0 +1,61 @@
+# Terraform Auto Scaling Group Setup #
+
+An Auto Scaling Group (ASG) in AWS is a service that automatically adjusts the number of EC2 instances in your environment based on demand, ensuring your application always has the right amount of capacity to perform efficiently. It helps keep costs low by scaling down when traffic is low and maintaining high availability by scaling up when more resources are needed. In this project, we will use Terraform to define and deploy the entire ASG setup—including launch templates, scaling policies, and all supporting infrastructure—so the environment is fully automated, repeatable, and version-controlled from start to finish.
+
+## Getting Started ##
+
+Before deploying the Auto Scaling Group with Terraform, complete the following steps to prepare your environment:
+
+### 1. Set Up Your AWS Credentials ###
+
+Make sure your AWS access key and secret key are configured on your machine so Terraform can authenticate with your AWS account. You can do this using:
+
+```bash
+aws configure
+```
+Enter your access key, secret key, default region, and output format when prompted.
+
+### 2. Clone This Repository ###
+
+Download the project to your local environment:
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
+### 3. Review the Terraform Files ###
+Inside the repo, you’ll find the core Terraform configurations that define your entire Auto Scaling setup, including:
+
+1. VPC and subnets
+
+2. Security groups
+
+3. Launch template
+
+4. Auto Scaling Group configuration
+
+5. Scaling policies (if included)
+   
+This gives you a clear view of everything Terraform is about to build.
+
+### 4. Initialize Terraform ###
+
+In the project directory, initialize Terraform to download all required providers and prepare the environment:
+```bash
+terraform init
+```
+### 5 Preview the Infrastructure ###
+Before applying anything, review the plan to see what resources will be created:
+```bash
+terraform plan
+```
+
+### 6. Deploy the ASG Environment ###
+When you're ready, apply the configuration and let Terraform automatically build the full environment in AWS:
+```bash
+terraform apply
+```
+Approve when prompted, and Terraform will create the Auto Scaling Group and all supporting infrastructure.
+![image](https://github.com/JBAssan78/Terraform-Auto-Scaling-Group/blob/31619e14053f5f3b59e7c715c5460d1513ba0822/Screenshot%202025-11-23%20130811.png)
+
+
